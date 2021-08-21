@@ -13,11 +13,11 @@ local X = Material.Load({
 	}
 })
 
-local T = X.New({
-  Title = "For Troll"  
+local K = X.New({
+  Title = "Cart Option"  
 })
 
-local B = T.Toggle({
+local B = K.Toggle({
 	Text = "SpeedAllCarts",
     Callback = function(Value)
         _G.Destroy = (Value)
@@ -32,7 +32,7 @@ local B = T.Toggle({
 })
 
 
-local B = T.Toggle({
+local B = K.Toggle({
 	Text = "SlowAllCarts",
     Callback = function(Value)
         _G.Destroyd = (Value)
@@ -44,10 +44,6 @@ local B = T.Toggle({
             end
         end,
 	Enabled = false
-})
-
-local K = X.New({
-	Title = "Cart Option"
 })
 
 local B = K.Toggle({
